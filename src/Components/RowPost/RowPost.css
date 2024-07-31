@@ -9,6 +9,8 @@
     padding: 20px;
     overflow-x: scroll;
     overflow-y: hidden;
+    scroll-behavior: smooth;
+    white-space: nowrap;
     
 }
 .posters::-webkit-scrollbar{
@@ -18,4 +20,25 @@
 .poster{
     max-height: 250px;
     margin-right: 10px;
+    cursor: pointer;
+}
+.poster:hover{
+    transform: scale(1.1);
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.2);;
+}
+.poster{
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1), box-shadow 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.smallposter{
+    max-height: 150px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.smallposter:hover{
+    transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.smallposter{
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1), box-shadow 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
